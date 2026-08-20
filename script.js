@@ -98,4 +98,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize with default
     updateLanguage(currentLang);
+
+    // Poems Logic
+    const poemsGrid = document.getElementById('poems-grid');
+    const poemModal = document.getElementById('poem-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const closeBtn = document.querySelector('.close-btn');
+
+    if (poemsGrid && typeof poems !== 'undefined') {
+        poems.forEach((poem) => {
+            const card = document.createElement('div');
+            card.className = 'poem-card glass-card';
+            
+            const title = document.createElement('h3');
+            title.textContent = poem.title;
+            
+            const author = document.createElement('p');
+            author.className = 'poem-author';
+            author.textContent = poem.author;
+            
+            const preview = document.createElement('p');
+            preview.className = 'poem-preview';
+            preview.textContent = poem.content;
+            
+            card.appendChild(title);
+            card.appendChild(author);
+            card.appendChild(preview);
+            
+            card.addEventListener('click', () => {
+                modalTitle.textContent = poem.title + ' - ' + poem.author;
+                modalBody.textContent = poem.content;
+                poemModal.classList.add('active');
+            });
+            
+            poemsGrid.appendChild(card);
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            poemModal.classList.remove('active');
+        });
+    }
+
+    if (poemModal) {
+        poemModal.addEventListener('click', (e) => {
+            if (e.target === poemModal) {
+                poemModal.classList.remove('active');
+            }
+        });
+    }
 });

@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Translations -->
     <script src="translations.js"></script>
+    <!-- Poems Data -->
+    <script src="poems.js"></script>
 </head>
 <body>
     <div class="blob-bg blob-1"></div>
@@ -22,7 +24,7 @@
     
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">Ali Davut<span>.</span> <i class="fas fa-globe-americas logo-icon"></i></a>
+            <a href="#" class="logo">Ali Davut<span>.</span></a>
             
             <div class="nav-right">
                 <ul class="nav-links">
@@ -31,6 +33,8 @@
                     <li><a href="#education" data-i18n="nav_education">Education</a></li>
                     <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
                     <li><a href="#travels" data-i18n="nav_travels">Travels</a></li>
+                    <li><a href="#poems" data-i18n="nav_poems">Poems</a></li>
+                    <li><a href="#blog" data-i18n="nav_blog" class="nav-blog-link">Blog</a></li>
                     <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
                 <button id="lang-toggle" class="lang-btn">TR</button>
@@ -54,9 +58,7 @@
                 </div>
             </div>
             <div class="hero-image fade-in">
-                <div class="image-wrapper">
-                    <img src="images/profile.jpg" alt="Ali Davut Eskiocak">
-                </div>
+                <img src="website images/business/foto.jpeg" alt="Ali Davut Eskiocak" class="profile-photo">
             </div>
         </section>
 
@@ -66,7 +68,7 @@
             <div class="about-content fade-in">
                 <div class="about-text glass-card">
                     <p data-i18n="about_p1">
-                        I am a 3rd-year Computer Engineering student at Istanbul Technical University (ITU) with a deep passion for technology and travel. Professionally, I specialize in enterprise cloud transitions, network infrastructure, and automation.
+                        I am a 4th-year Computer Engineering student at Istanbul Technical University (ITU) with a deep passion for technology and travel. Professionally, I specialize in enterprise cloud transitions, network infrastructure, and automation.
                     </p>
                     <p data-i18n="about_p2">
                         Beyond the code, I am an avid traveler who loves exploring diverse cultures. This global perspective helps me build scalable, resilient solutions that connect people and systems efficiently.
@@ -140,14 +142,14 @@
             <div class="card-grid">
                 
                 <div class="glass-card edu-card fade-in">
-                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-icon"><span style="font-size: 2.5rem; line-height: 1;">🇹🇷</span></div>
                     <h3>Istanbul Technical University (ITU)</h3>
-                    <p class="edu-degree" data-i18n="edu_itu_degree">B.Sc. Computer Engineering (3rd Year)</p>
+                    <p class="edu-degree" data-i18n="edu_itu_degree">B.Sc. Computer Engineering (4th Year)</p>
                     <p class="edu-meta" data-i18n="edu_itu_meta">Istanbul, Turkey | GPA: 3.34 / 4.00 | Exp. Grad: 2027</p>
                 </div>
 
                 <div class="glass-card edu-card fade-in">
-                    <div class="edu-icon"><i class="fas fa-globe-europe"></i></div>
+                    <div class="edu-icon"><span style="font-size: 2.5rem; line-height: 1;">🇪🇸</span></div>
                     <h3>University of Alcalá (UAH)</h3>
                     <p class="edu-degree" data-i18n="edu_uah_degree">Erasmus+ Exchange Student</p>
                     <p class="edu-meta" data-i18n="edu_uah_meta">Alcalá de Henares, Spain | 01/2026 – 06/2026</p>
@@ -257,28 +259,146 @@
             </div>
             
             <div class="carousel-container fade-in">
-                <div class="carousel-track">
-                    <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
-                    <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
-                    <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
-                    <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
-                    <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
-                    <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
-                    <img src="website images/paris.jpg" alt="Paris" class="carousel-img">
-                    <img src="website images/prag.jpg" alt="Prague" class="carousel-img">
-                    <img src="website images/roma.jpg" alt="Roma" class="carousel-img">
-                    <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
-                    <img src="website images/skopje.jpg" alt="Skopje" class="carousel-img">
-                    <img src="website images/sofya.jpg" alt="Sofia" class="carousel-img">
-                    <img src="website images/stockholm.jpg" alt="Stockholm" class="carousel-img">
-                    <!-- Duplicate images to create infinite loop effect -->
-                    <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
-                    <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
-                    <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
-                    <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
-                    <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
-                    <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
+                <div class="carousel-track" id="travels-track">
+                    <figure class="travel-card">
+                        <img src="website images/Budapest.jpg" alt="Budapest" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_budapest">Budapest, Hungary</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/Napoli.jpg" alt="Naples" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_napoli">Naples, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_barcelona">Barcelona, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_belgrade">Belgrade, Serbia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_buyukada">Istanbul, Türkiye</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_granada">Granada, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_madrid">Madrid, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_milan">Milan, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/paris.jpg" alt="Paris" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_paris">Paris, France</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/prag.jpg" alt="Prague" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_prag">Prague, Czechia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/roma.jpg" alt="Roma" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sahra">Sahara, Morocco</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/skopje.jpg" alt="Skopje" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_skopje">Skopje, North Macedonia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/sofya.jpg" alt="Sofia" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sofya">Sofia, Bulgaria</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/stockholm.jpg" alt="Stockholm" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_stockholm">Stockholm, Sweden</span></figcaption>
+                    </figure>
+                    <!-- Duplicate for infinite scroll -->
+                    <figure class="travel-card">
+                        <img src="website images/Budapest.jpg" alt="Budapest" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_budapest">Budapest, Hungary</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/Napoli.jpg" alt="Naples" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_napoli">Naples, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_barcelona">Barcelona, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_belgrade">Belgrade, Serbia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_buyukada">Istanbul, Türkiye</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_granada">Granada, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_madrid">Madrid, Spain</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_milan">Milan, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/paris.jpg" alt="Paris" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_paris">Paris, France</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/prag.jpg" alt="Prague" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_prag">Prague, Czechia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/roma.jpg" alt="Roma" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sahra">Sahara, Morocco</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/skopje.jpg" alt="Skopje" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_skopje">Skopje, North Macedonia</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/sofya.jpg" alt="Sofia" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sofya">Sofia, Bulgaria</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
+                        <img src="website images/stockholm.jpg" alt="Stockholm" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_stockholm">Stockholm, Sweden</span></figcaption>
+                    </figure>
                 </div>
+            </div>
+        </section>
+
+        <!-- Poems Section -->
+        <section id="poems" class="section">
+            <h2 class="section-title fade-in" data-i18n="poems_title">Poems I'm Glad I Can Read in Turkish</h2>
+            <div class="poems-grid fade-in" id="poems-grid">
+                <!-- Dynamically generated by script.js -->
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <h2 class="section-title fade-in" data-i18n="blog_title">Blog</h2>
+            <div class="blog-content glass-card fade-in">
+                <i class="fas fa-pencil-alt blog-icon"></i>
+                <p data-i18n="blog_coming_soon">Coming Soon! I'll be sharing my thoughts on technology, travel, and more.</p>
             </div>
         </section>
 
@@ -294,6 +414,16 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Poem Modal -->
+        <div id="poem-modal" class="modal">
+            <div class="modal-content glass-card">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-title" class="gradient-text"></h2>
+                <div id="modal-body" class="poem-body"></div>
+            </div>
+        </div>
     </main>
 
     <footer>

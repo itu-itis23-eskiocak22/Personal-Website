@@ -5,6 +5,8 @@ const translations = {
         "nav_education": "Education",
         "nav_skills": "Skills",
         "nav_travels": "Travels",
+        "nav_blog": "Blog",
+        "nav_poems": "Poems",
         "nav_contact": "Contact",
         "hero_greeting": "Hi, I'm",
         "hero_title": "Explorer, Tech Enthusiast & <span class=\"gradient-text\">Developer</span>",
@@ -19,6 +21,9 @@ const translations = {
         "skills_title": "Skills & Certifications",
         "travels_title": "My Travels",
         "travels_subtitle": "A glimpse of the world through my lens",
+        "poems_title": "Poems I'm Glad I Can Read in Turkish",
+        "blog_title": "Blog",
+        "blog_coming_soon": "Coming Soon! I'll be sharing my thoughts on technology, travel, and more.",
         "contact_title": "Get In Touch",
         "contact_p": "I'm always open to discussing new opportunities, tech projects, or your favorite travel destinations.",
         
@@ -48,7 +53,24 @@ const translations = {
         "tech_skills": "Technical Skills",
         "certifications": "Certifications",
         "key_project": "Key Project",
-        "student_activities": "Student Activities"
+        "student_activities": "Student Activities",
+
+        // Locations
+        "loc_barcelona": "Barcelona, Spain",
+        "loc_belgrade": "Belgrade, Serbia",
+        "loc_buyukada": "Istanbul, Türkiye",
+        "loc_granada": "Granada, Spain",
+        "loc_madrid": "Madrid, Spain",
+        "loc_milan": "Milan, Italy",
+        "loc_paris": "Paris, France",
+        "loc_prag": "Prague, Czechia",
+        "loc_roma": "Rome, Italy",
+        "loc_sahra": "Sahara, Morocco",
+        "loc_skopje": "Skopje, North Macedonia",
+        "loc_sofya": "Sofia, Bulgaria",
+        "loc_stockholm": "Stockholm, Sweden",
+        "loc_budapest": "Budapest, Hungary",
+        "loc_napoli": "Naples, Italy"
     },
     tr: {
         "nav_about": "Hakkımda",
@@ -56,6 +78,8 @@ const translations = {
         "nav_education": "Eğitim",
         "nav_skills": "Yetenekler",
         "nav_travels": "Gezilerim",
+        "nav_blog": "Blog",
+        "nav_poems": "Şiirler",
         "nav_contact": "İletişim",
         "hero_greeting": "Merhaba, Ben",
         "hero_title": "Gezgin, Teknoloji Tutkunu & <span class=\"gradient-text\">Geliştirici</span>",
@@ -70,6 +94,9 @@ const translations = {
         "skills_title": "Yetenekler ve Sertifikalar",
         "travels_title": "Gezilerim",
         "travels_subtitle": "Objektifimden dünyaya bir bakış",
+        "poems_title": "İyi ki Türkçe biliyorum dediğim şiirler",
+        "blog_title": "Blog",
+        "blog_coming_soon": "Çok Yakında! Teknoloji, seyahat ve daha fazlası hakkındaki düşüncelerimi burada paylaşacağım.",
         "contact_title": "İletişime Geç",
         "contact_p": "Yeni fırsatlar, teknoloji projeleri veya favori seyahat rotalarınız hakkında konuşmaya her zaman açığım.",
         
@@ -99,6 +126,23 @@ const translations = {
         "tech_skills": "Teknik Yetenekler",
         "certifications": "Sertifikalar",
         "key_project": "Öne Çıkan Proje",
-        "student_activities": "Öğrenci Aktiviteleri"
+        "student_activities": "Öğrenci Aktiviteleri",
+
+        // Locations
+        "loc_barcelona": "Barselona, İspanya",
+        "loc_belgrade": "Belgrad, Sırbistan",
+        "loc_buyukada": "İstanbul, Türkiye",
+        "loc_granada": "Granada, İspanya",
+        "loc_madrid": "Madrid, İspanya",
+        "loc_milan": "Milano, İtalya",
+        "loc_paris": "Paris, Fransa",
+        "loc_prag": "Prag, Çekya",
+        "loc_roma": "Roma, İtalya",
+        "loc_sahra": "Sahra, Fas",
+        "loc_skopje": "Üsküp, Kuzey Makedonya",
+        "loc_sofya": "Sofya, Bulgaristan",
+        "loc_stockholm": "Stokholm, İsveç",
+        "loc_budapest": "Budapeşte, Macaristan",
+        "loc_napoli": "Napoli, İtalya"
     }
 };
