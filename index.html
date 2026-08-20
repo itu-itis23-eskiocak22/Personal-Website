@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Davut Eskiocak | Cloud & Infrastructure Engineer</title>
-    <meta name="description" content="Personal website of Ali Davut Eskiocak, Computer Engineering Student at ITU, specializing in enterprise cloud transition, network infrastructure, and automation.">
+    <title>Ali Davut Eskiocak | Explorer & Developer</title>
+    <meta name="description" content="Personal website of Ali Davut Eskiocak, Computer Engineering Student at ITU, specializing in cloud, automation, and exploring the world.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Translations -->
+    <script src="translations.js"></script>
 </head>
 <body>
     <div class="blob-bg blob-1"></div>
@@ -20,14 +22,19 @@
     
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">ADE<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#" class="logo">Ali Davut<span>.</span> <i class="fas fa-globe-americas logo-icon"></i></a>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="#education" data-i18n="nav_education">Education</a></li>
+                    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#travels" data-i18n="nav_travels">Travels</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <button id="lang-toggle" class="lang-btn">TR</button>
+            </div>
         </div>
     </nav>
 
@@ -35,15 +42,15 @@
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-content fade-in">
-                <p class="greeting">Hi, I'm</p>
+                <p class="greeting" data-i18n="hero_greeting">Hi, I'm</p>
                 <h1 class="name">Ali Davut Eskiocak</h1>
-                <h2 class="title">Computer Engineering Student & <span class="gradient-text">Cloud Enthusiast</span></h2>
-                <p class="summary">
-                    Specializing in enterprise cloud transition, network infrastructure, and automation. Currently preparing for the Microsoft AZ-104 certification.
+                <h2 class="title" data-i18n="hero_title">Explorer, Tech Enthusiast & <span class="gradient-text">Developer</span></h2>
+                <p class="summary" data-i18n="hero_summary">
+                    I'm a Computer Engineering student passionate about building scalable cloud architectures, exploring new cultures, and pushing the boundaries of technology.
                 </p>
                 <div class="hero-cta">
-                    <a href="#experience" class="btn btn-primary">View Experience</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#experience" class="btn btn-primary" data-i18n="btn_experience">View Experience</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-image fade-in">
@@ -55,14 +62,14 @@
 
         <!-- About Section -->
         <section id="about" class="section">
-            <h2 class="section-title fade-in">About Me</h2>
+            <h2 class="section-title fade-in" data-i18n="about_title">About Me</h2>
             <div class="about-content fade-in">
                 <div class="about-text glass-card">
-                    <p>
-                        I am a 3rd-year Computer Engineering student at Istanbul Technical University (ITU) with hands-on experience in enterprise cloud transition, network infrastructure, and automation. 
+                    <p data-i18n="about_p1">
+                        I am a 3rd-year Computer Engineering student at Istanbul Technical University (ITU) with a deep passion for technology and travel. Professionally, I specialize in enterprise cloud transitions, network infrastructure, and automation.
                     </p>
-                    <p>
-                        My proven track record includes optimizing IT workflows, managing infrastructure health, and developing scalable technical solutions. I am passionate about leveraging technology to solve complex problems and drive efficiency.
+                    <p data-i18n="about_p2">
+                        Beyond the code, I am an avid traveler who loves exploring diverse cultures. This global perspective helps me build scalable, resilient solutions that connect people and systems efficiently.
                     </p>
                     <div class="contact-info-inline">
                         <p><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</p>
@@ -75,22 +82,21 @@
 
         <!-- Experience Section -->
         <section id="experience" class="section">
-            <h2 class="section-title fade-in">Professional Experience</h2>
+            <h2 class="section-title fade-in" data-i18n="exp_title">Professional Experience</h2>
             <div class="timeline">
                 
                 <div class="timeline-item fade-in">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
-                            <h3>IT Infrastructure Solution Design Intern</h3>
+                            <h3 data-i18n="exp_mercedes_title">IT Infrastructure Solution Design Intern</h3>
                             <span class="company"><i class="fas fa-building"></i> Mercedes-Benz Türk A.Ş.</span>
-                            <span class="date"><i class="far fa-calendar-alt"></i> 07/2025 – Present (Hybrid)</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_mercedes_date">07/2025 – Present (Hybrid)</span></span>
                         </div>
                         <ul class="timeline-details">
-                            <li>Support enterprise cloud transition strategies and IT infrastructure optimization, aligning legacy workloads with modern cloud-ready design principles.</li>
-                            <li>Oversee log management, inventory tracking, and firewall configurations to ensure robust, secure, and highly available networks.</li>
-                            <li>Designed and built internal automation tools utilizing Microsoft Power Automate to eliminate manual bottlenecks and optimize workflow efficiency.</li>
-                            <li>Collaborating closely with cross-functional teams to translate technical infrastructure needs into structured operational solutions.</li>
+                            <li data-i18n="exp_mercedes_l1">Support enterprise cloud transition strategies and IT infrastructure optimization.</li>
+                            <li data-i18n="exp_mercedes_l2">Oversee log management, inventory tracking, and firewall configurations.</li>
+                            <li data-i18n="exp_mercedes_l3">Designed internal automation tools utilizing Microsoft Power Automate.</li>
                         </ul>
                     </div>
                 </div>
@@ -99,13 +105,13 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
-                            <h3>Part-Time Working Student (IT Service Desk)</h3>
+                            <h3 data-i18n="exp_siemens_title">Part-Time Working Student (IT Service Desk)</h3>
                             <span class="company"><i class="fas fa-building"></i> Siemens (Istanbul)</span>
-                            <span class="date"><i class="far fa-calendar-alt"></i> 09/2024 – 07/2025</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_siemens_date">09/2024 – 07/2025</span></span>
                         </div>
                         <ul class="timeline-details">
-                            <li>Acted as the first line of technical consultation for R&D teams under Siemens Advanta, analyzing technical challenges and translating requirements into actionable IT solutions.</li>
-                            <li>Managed network support infrastructure and IT Asset Management, utilizing ticketing systems to ensure SLA compliance and operational continuity.</li>
+                            <li data-i18n="exp_siemens_l1">Acted as first line of technical consultation for R&D teams under Siemens Advanta.</li>
+                            <li data-i18n="exp_siemens_l2">Managed network support infrastructure and IT Asset Management.</li>
                         </ul>
                     </div>
                 </div>
@@ -114,14 +120,13 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
-                            <h3>Project Intern</h3>
+                            <h3 data-i18n="exp_isuzu_title">Project Intern</h3>
                             <span class="company"><i class="fas fa-building"></i> Anadolu Isuzu (Istanbul)</span>
-                            <span class="date"><i class="far fa-calendar-alt"></i> 07/2024 – 09/2024</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_isuzu_date">07/2024 – 09/2024</span></span>
                         </div>
                         <ul class="timeline-details">
-                            <li>Conducted requirement analysis to optimize the fuse box control workflow within the R&D division.</li>
-                            <li>Designed, developed, and demonstrated a software-based solution to address process inefficiencies.</li>
-                            <li>Presented technical designs, system architecture, and solution outcomes directly to corporate directors, showcasing strong communication and presentation skills.</li>
+                            <li data-i18n="exp_isuzu_l1">Conducted requirement analysis to optimize the fuse box control workflow.</li>
+                            <li data-i18n="exp_isuzu_l2">Designed and demonstrated a software-based solution to address inefficiencies.</li>
                         </ul>
                     </div>
                 </div>
@@ -131,28 +136,28 @@
 
         <!-- Education Section -->
         <section id="education" class="section">
-            <h2 class="section-title fade-in">Education</h2>
+            <h2 class="section-title fade-in" data-i18n="edu_title">Education</h2>
             <div class="card-grid">
                 
                 <div class="glass-card edu-card fade-in">
                     <div class="edu-icon"><i class="fas fa-university"></i></div>
                     <h3>Istanbul Technical University (ITU)</h3>
-                    <p class="edu-degree">B.Sc. Computer Engineering (3rd Year)</p>
-                    <p class="edu-meta">Istanbul, Turkey | GPA: 3.34 / 4.00 | Exp. Grad: 2027</p>
+                    <p class="edu-degree" data-i18n="edu_itu_degree">B.Sc. Computer Engineering (3rd Year)</p>
+                    <p class="edu-meta" data-i18n="edu_itu_meta">Istanbul, Turkey | GPA: 3.34 / 4.00 | Exp. Grad: 2027</p>
                 </div>
 
                 <div class="glass-card edu-card fade-in">
                     <div class="edu-icon"><i class="fas fa-globe-europe"></i></div>
                     <h3>University of Alcalá (UAH)</h3>
-                    <p class="edu-degree">Erasmus+ Exchange Student, Computer Engineering</p>
-                    <p class="edu-meta">Alcalá de Henares, Spain | 01/2026 – 06/2026</p>
+                    <p class="edu-degree" data-i18n="edu_uah_degree">Erasmus+ Exchange Student</p>
+                    <p class="edu-meta" data-i18n="edu_uah_meta">Alcalá de Henares, Spain | 01/2026 – 06/2026</p>
                 </div>
 
                 <div class="glass-card edu-card fade-in">
                     <div class="edu-icon"><i class="fas fa-school"></i></div>
                     <h3>Hatay Science Highschool</h3>
-                    <p class="edu-degree">Science Track</p>
-                    <p class="edu-meta">2018 – 2022 | Grade: 98.5/100</p>
+                    <p class="edu-degree" data-i18n="edu_hs_degree">Science Track</p>
+                    <p class="edu-meta" data-i18n="edu_hs_meta">2018 – 2022 | Grade: 98.5/100</p>
                     <p class="edu-desc">YKS Rank: 365th among 3M+ candidates (Nationwide Top 0.01%)</p>
                 </div>
 
@@ -161,12 +166,12 @@
 
         <!-- Skills & Certifications Section -->
         <section id="skills" class="section">
-            <h2 class="section-title fade-in">Skills & Certifications</h2>
+            <h2 class="section-title fade-in" data-i18n="skills_title">Skills & Certifications</h2>
             <div class="skills-container">
                 
                 <div class="skills-col fade-in">
                     <div class="glass-card">
-                        <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="tech_skills">Technical Skills</span></h3>
                         <div class="skill-category">
                             <h4>Cloud & Infra</h4>
                             <div class="skill-tags">
@@ -209,7 +214,7 @@
 
                 <div class="skills-col fade-in">
                     <div class="glass-card certifications-card">
-                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <h3><i class="fas fa-certificate"></i> <span data-i18n="certifications">Certifications</span></h3>
                         <div class="cert-item">
                             <h4>Microsoft Certified: Azure Administrator Associate</h4>
                             <p>Credential ID: AZ-104 (In Progress – Expected Q3 2026)</p>
@@ -220,7 +225,7 @@
                     </div>
                     
                     <div class="glass-card mt-4 projects-card">
-                         <h3><i class="fas fa-project-diagram"></i> Key Project</h3>
+                         <h3><i class="fas fa-project-diagram"></i> <span data-i18n="key_project">Key Project</span></h3>
                          <div class="project-item">
                              <h4>Adventure Sports Accessibility App</h4>
                              <a href="https://gounbound.app" target="_blank" class="project-link">gounbound.app <i class="fas fa-external-link-alt"></i></a>
@@ -229,7 +234,7 @@
                     </div>
                     
                     <div class="glass-card mt-4 activities-card">
-                         <h3><i class="fas fa-users"></i> Student Activities</h3>
+                         <h3><i class="fas fa-users"></i> <span data-i18n="student_activities">Student Activities</span></h3>
                          <div class="activity-item">
                              <h4>ITU Algorithm Team (09/2023 – 01/2025)</h4>
                              <p>Coordinated programming bootcamps and algorithmic problem-solving events.</p>
@@ -244,11 +249,44 @@
             </div>
         </section>
 
+        <!-- Travels Section -->
+        <section id="travels" class="section">
+            <div class="travels-header fade-in">
+                <h2 class="section-title" data-i18n="travels_title">My Travels</h2>
+                <p class="travels-subtitle" data-i18n="travels_subtitle">A glimpse of the world through my lens</p>
+            </div>
+            
+            <div class="carousel-container fade-in">
+                <div class="carousel-track">
+                    <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
+                    <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
+                    <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
+                    <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
+                    <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
+                    <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
+                    <img src="website images/paris.jpg" alt="Paris" class="carousel-img">
+                    <img src="website images/prag.jpg" alt="Prague" class="carousel-img">
+                    <img src="website images/roma.jpg" alt="Roma" class="carousel-img">
+                    <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
+                    <img src="website images/skopje.jpg" alt="Skopje" class="carousel-img">
+                    <img src="website images/sofya.jpg" alt="Sofia" class="carousel-img">
+                    <img src="website images/stockholm.jpg" alt="Stockholm" class="carousel-img">
+                    <!-- Duplicate images to create infinite loop effect -->
+                    <img src="website images/barcelona.jpg" alt="Barcelona" class="carousel-img">
+                    <img src="website images/belgrade.jpg" alt="Belgrade" class="carousel-img">
+                    <img src="website images/buyukada-istanbul.jpg" alt="Buyukada" class="carousel-img">
+                    <img src="website images/granada.jpg" alt="Granada" class="carousel-img">
+                    <img src="website images/madrid.jpg" alt="Madrid" class="carousel-img">
+                    <img src="website images/milan.jpg" alt="Milan" class="carousel-img">
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section">
-            <h2 class="section-title fade-in">Get In Touch</h2>
+            <h2 class="section-title fade-in" data-i18n="contact_title">Get In Touch</h2>
             <div class="contact-content glass-card fade-in">
-                <p>I'm always open to discussing new opportunities, cloud strategies, or tech projects.</p>
+                <p data-i18n="contact_p">I'm always open to discussing new opportunities, tech projects, or your favorite travel destinations.</p>
                 <div class="social-links">
                     <a href="mailto:alidavut.esk1@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://linkedin.com/in/ali-davut-eskiocak" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
