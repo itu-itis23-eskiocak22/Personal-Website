@@ -46,11 +46,8 @@
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-content fade-in">
-                <h1 class="name">Ali Davut Eskiocak</h1>
-                <h2 class="title" data-i18n="hero_title">Explorer, Tech Enthusiast & <span class="gradient-text">Developer</span></h2>
-                <p class="summary" data-i18n="hero_summary">
-                    I'm a Computer Engineering student passionate about building scalable cloud architectures, exploring new cultures, and pushing the boundaries of technology.
-                </p>
+                <h1 class="name animated-gradient-text">Ali Davut Eskiocak</h1>
+                <h2 class="title" data-i18n="hero_title">Tech Enthusiast & <span class="gradient-text">Student</span></h2>
                 <div class="hero-cta">
                     <a href="#experience" class="btn btn-primary" data-i18n="btn_experience">View Experience</a>
                     <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Get in Touch</a>
@@ -256,6 +253,10 @@
                         <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
                     </figure>
                     <figure class="travel-card">
+                        <img src="website images/roma2.jpg" alt="Roma 2" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
                         <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
                         <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sahra">Sahara, Morocco</span></figcaption>
                     </figure>
@@ -317,6 +318,10 @@
                         <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
                     </figure>
                     <figure class="travel-card">
+                        <img src="website images/roma2.jpg" alt="Roma 2" class="carousel-img">
+                        <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_roma">Rome, Italy</span></figcaption>
+                    </figure>
+                    <figure class="travel-card">
                         <img src="website images/sahra-fas.jpg" alt="Sahara, Morocco" class="carousel-img">
                         <figcaption class="travel-caption"><i class="fas fa-map-marker-alt"></i> <span data-i18n="loc_sahra">Sahara, Morocco</span></figcaption>
                     </figure>
@@ -351,9 +356,9 @@
         <!-- Albums Section -->
         <section id="albums" class="section">
             <h2 class="section-title fade-in" data-i18n="albums_title">Favorite Albums</h2>
-            <div class="albums-container fade-in">
-                <button class="scroll-btn albums-scroll-btn scroll-left" id="albums-scroll-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
-                <div class="albums-grid" id="albums-grid">
+            <div class="carousel-container fade-in">
+                <div class="carousel-track albums-track">
+                    <!-- Original Set -->
                     <div class="album-card"><img src="website images/albums/linkin_park_hybrid_theory.jpg" alt="Linkin Park Hybrid Theory"></div>
                     <div class="album-card"><img src="website images/albums/linkin_park_meteora.jpg" alt="Linkin Park Meteora"></div>
                     <div class="album-card"><img src="website images/albums/teoman_teo.jpg" alt="Teoman Teo"></div>
@@ -362,8 +367,18 @@
                     <div class="album-card"><img src="website images/albums/mor_ve_ötesi_dunya_yalan_soyluyor.jpg" alt="Mor ve Ötesi Dünya Yalan Söylüyor"></div>
                     <div class="album-card"><img src="website images/albums/manga_şehr_i_huzun.jpg" alt="Manga Şehr-i Hüzün"></div>
                     <div class="album-card"><img src="website images/albums/model_diger_masallar.jpg" alt="Model Diğer Masallar"></div>
+                    <div class="album-card"><img src="website images/albums/duman_belki_alisman_lazim.jpg" alt="Duman Belki Alışman Lazım"></div>
+                    <!-- Duplicated Set for Infinite Scroll -->
+                    <div class="album-card"><img src="website images/albums/linkin_park_hybrid_theory.jpg" alt="Linkin Park Hybrid Theory"></div>
+                    <div class="album-card"><img src="website images/albums/linkin_park_meteora.jpg" alt="Linkin Park Meteora"></div>
+                    <div class="album-card"><img src="website images/albums/teoman_teo.jpg" alt="Teoman Teo"></div>
+                    <div class="album-card"><img src="website images/albums/three_days_grace_one_x.jpg" alt="Three Days Grace One-x"></div>
+                    <div class="album-card"><img src="website images/albums/paramore_brand_new_eyes.jpg" alt="Paramore Brand New Eyes"></div>
+                    <div class="album-card"><img src="website images/albums/mor_ve_ötesi_dunya_yalan_soyluyor.jpg" alt="Mor ve Ötesi Dünya Yalan Söylüyor"></div>
+                    <div class="album-card"><img src="website images/albums/manga_şehr_i_huzun.jpg" alt="Manga Şehr-i Hüzün"></div>
+                    <div class="album-card"><img src="website images/albums/model_diger_masallar.jpg" alt="Model Diğer Masallar"></div>
+                    <div class="album-card"><img src="website images/albums/duman_belki_alisman_lazim.jpg" alt="Duman Belki Alışman Lazım"></div>
                 </div>
-                <button class="scroll-btn albums-scroll-btn scroll-right" id="albums-scroll-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 

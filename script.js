@@ -173,29 +173,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // Albums Scroll Logic
-    const albumsScrollLeft = document.getElementById('albums-scroll-left');
-    const albumsScrollRight = document.getElementById('albums-scroll-right');
-    const albumsGrid = document.getElementById('albums-grid');
-    
-    if (albumsGrid && albumsScrollLeft && albumsScrollRight) {
-        albumsScrollLeft.addEventListener('click', () => {
-            const card = albumsGrid.querySelector('.album-card');
-            if (card) {
-                const cardWidth = card.offsetWidth;
-                const gap = parseFloat(getComputedStyle(albumsGrid).gap) || 32;
-                albumsGrid.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
-            }
-        });
-
-        albumsScrollRight.addEventListener('click', () => {
-            const card = albumsGrid.querySelector('.album-card');
-            if (card) {
-                const cardWidth = card.offsetWidth;
-                const gap = parseFloat(getComputedStyle(albumsGrid).gap) || 32;
-                albumsGrid.scrollBy({ left: (cardWidth + gap), behavior: 'smooth' });
-            }
-        });
-    }
 });
