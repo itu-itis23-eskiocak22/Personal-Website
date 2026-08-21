@@ -10,14 +10,14 @@ const poems = [
     "content": "Hayatımda ilk kez biri bana\n“Kendine çok dikkat et” dedi.\n\nAnlamış onun kalbini taşıdığımı herhalde…\nRastgele, yürürken aklına geleyim sızlasın için…\n\nZaman sen olmayınca geçmiyor, sen olmayınca yetmiyor….\nÜşüyorsan söyle, seni bir kat daha seveyim.\nBak! papatya mevsimi geldi.\nMevsimlerden papatyayı severim.\nSonra seni…\nSonra yine seni…\nve hep seni.\n\nKim istemez mutlu olmayı ama mutsuzluğa da var mısın?\nÇık gel bir kez daha,\nÇık gel bir kez daha beni bozguna uğrat, ben güzel değil miyim?\n\nNeden kuş koymuyorlar yoluma?\nBen sana kızsam, kendime küserim…\nEn çok seni aradım.\nGözlerinse asılı bıraktığın yerdeydi…\nGözlerin silindi zamanla…\nDedim ya,\nEylül’dü\nSavruluşu, bundandı kimsesizliğimizin.\nSonra dalgalar geldi bile, sonra mavilik adı her yerimizin;\nNasıl hatırlıyorsan dünyayı, öyle.\n\nKötülüklerin büsbütün egemen olduğu, namussuz bir çağ bu biliyor musun?\n\nHasret kalmışız, yüreği güzel insanlara.\nBazen sadece yorgun oluyor insan,\nNe küs, ne yalnız, ne de aşık…\nAma sen yine de gitme.\nGidersen peşinden gelmem,\nAma kalırsan bu masalın sonunu birlikte öğreniriz.\n\nMeğer ne çok canı yanarmış insanın, baktığı yerde göremeyince\nGörmek istediğini.\n\nBir gün aklına gelecek olursam, bana şiir ısmarla.\nEylül’ü konuşalım."
   },
   {
-    "title": "Sevgi Duvarı",
-    "author": "Can Yücel",
-    "content": "Sen miydin o yalnızlığım mıydı yoksa\nKör karanlıkta açardık paslı gözlerimizi\nDilimizde akşamdan kalma bir küfür\nSalonlar piyasalar sanat sevicileri\nDerdim günüm insan arasına çıkarmaktı seni\nYakanda bir amonyak çiçeği\nYalnızlığım benim sidikli kontesim\nNe kadar rezil olursak o kadar iyi\n\nKumkapı meyhanelerine dadandık\nÖnümüzde Altınbaş, Altın Zincir, fasulye pilakisi\nArdımızda görevliler, ekipler, Hızır Paşalar\nSabahları açıklarda bulurlardı leşimi\nÖyle sıcaktı ki çöpcülerin elleri\nÇöpcülerin elleriyle okşardım seni\nYalnızlığım benim süpürge saçlım\nNe kadar kötü kokarsak o kadar iyi\n\nBaktım gökte bir kırmızı bir uçak\nBol çelik bol yıldız bol insan\nBir gece Sevgi Duvarını aştık\nDustuğum yer öyle açık seçik ki\nBaşucumda bi sen varsın bi de evren\nSaymıyorum ölüp ölüp dirilttiklerimi\nYalnızlığım benim çoğul türkülerim\nNe kadar yalansız yaşarsak o kadar iyi"
-  },
-  {
     "title": "Davet",
     "author": "Nazım Hikmet",
     "content": "Dörtnala gelip Uzak Asya'dan\nAkdeniz'e bir kısrak başı gibi uzanan\n\t\tbu memleket, bizim.\n\nBilekler kan içinde, dişler kenetli, ayaklar çıplak\nve ipek bir halıya benziyen toprak,\n\t\tbu cehennem, bu cennet bizim.\n\nKapansın el kapıları, bir daha açılmasın,\nyok edin insanın insana kulluğunu,\n\t\tbu dâvet bizim....\n\nYaşamak bir ağaç gibi tek ve hür\nve bir orman gibi kardeşçesine,\n\t\tbu hasret bizim..."
+  },
+  {
+    "title": "Sevgi Duvarı",
+    "author": "Can Yücel",
+    "content": "Sen miydin o yalnızlığım mıydı yoksa\nKör karanlıkta açardık paslı gözlerimizi\nDilimizde akşamdan kalma bir küfür\nSalonlar piyasalar sanat sevicileri\nDerdim günüm insan arasına çıkarmaktı seni\nYakanda bir amonyak çiçeği\nYalnızlığım benim sidikli kontesim\nNe kadar rezil olursak o kadar iyi\n\nKumkapı meyhanelerine dadandık\nÖnümüzde Altınbaş, Altın Zincir, fasulye pilakisi\nArdımızda görevliler, ekipler, Hızır Paşalar\nSabahları açıklarda bulurlardı leşimi\nÖyle sıcaktı ki çöpcülerin elleri\nÇöpcülerin elleriyle okşardım seni\nYalnızlığım benim süpürge saçlım\nNe kadar kötü kokarsak o kadar iyi\n\nBaktım gökte bir kırmızı bir uçak\nBol çelik bol yıldız bol insan\nBir gece Sevgi Duvarını aştık\nDustuğum yer öyle açık seçik ki\nBaşucumda bi sen varsın bi de evren\nSaymıyorum ölüp ölüp dirilttiklerimi\nYalnızlığım benim çoğul türkülerim\nNe kadar yalansız yaşarsak o kadar iyi"
   },
   {
     "title": "Baktım Gülüşünden Güzel Şiir Olur",

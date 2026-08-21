@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Davut.</title>
+    <title>Ali Davut Eskiocak</title>
     <link rel="icon" href="favicon.jpg" type="image/jpeg">
     <meta name="description" content="Personal website of Ali Davut Eskiocak, Computer Engineering Student at ITU, specializing in cloud, automation, and exploring the world.">
     <!-- Google Fonts -->
@@ -25,7 +25,6 @@
     
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">Ali Davut<span>.</span></a>
             
             <div class="nav-right">
                 <ul class="nav-links">
@@ -35,7 +34,7 @@
                     <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
                     <li><a href="#travels" data-i18n="nav_travels">Travels</a></li>
                     <li><a href="#poems" data-i18n="nav_poems">Poems</a></li>
-                    <li><a href="#blog" data-i18n="nav_blog" class="nav-blog-link">Blog</a></li>
+                    <li><a href="#albums" data-i18n="nav_albums">Albums</a></li>
                     <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
                 <button id="lang-toggle" class="lang-btn">TR</button>
@@ -47,7 +46,6 @@
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-content fade-in">
-                <p class="greeting" data-i18n="hero_greeting">Hi, I'm</p>
                 <h1 class="name">Ali Davut Eskiocak</h1>
                 <h2 class="title" data-i18n="hero_title">Explorer, Tech Enthusiast & <span class="gradient-text">Developer</span></h2>
                 <p class="summary" data-i18n="hero_summary">
@@ -74,11 +72,6 @@
                     <p data-i18n="about_p2">
                         Beyond the code, I am an avid traveler who loves exploring diverse cultures. This global perspective helps me build scalable, resilient solutions that connect people and systems efficiently.
                     </p>
-                    <div class="contact-info-inline">
-                        <p><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</p>
-                        <p><i class="fas fa-phone-alt"></i> +90 546 511 14 34</p>
-                        <p><i class="fas fa-envelope"></i> alidavut.esk1@gmail.com</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -157,11 +150,11 @@
                 </div>
 
                 <div class="glass-card edu-card fade-in">
-                    <div class="edu-icon"><i class="fas fa-school"></i></div>
-                    <h3>Hatay Science Highschool</h3>
+                    <div class="edu-icon"><span style="font-size: 2.5rem; line-height: 1;">🇹🇷</span></div>
+                    <h3 data-i18n="edu_hs_name">Hatay Science Highschool</h3>
                     <p class="edu-degree" data-i18n="edu_hs_degree">Science Track</p>
                     <p class="edu-meta" data-i18n="edu_hs_meta">2018 – 2022 | Grade: 98.5/100</p>
-                    <p class="edu-desc">YKS Rank: 365th among 3M+ candidates (Nationwide Top 0.01%)</p>
+                    <p class="edu-desc" data-i18n="edu_hs_rank">YKS Rank: 365th</p>
                 </div>
 
             </div>
@@ -172,49 +165,6 @@
             <h2 class="section-title fade-in" data-i18n="skills_title">Skills & Certifications</h2>
             <div class="skills-container">
                 
-                <div class="skills-col fade-in">
-                    <div class="glass-card">
-                        <h3><i class="fas fa-tools"></i> <span data-i18n="tech_skills">Technical Skills</span></h3>
-                        <div class="skill-category">
-                            <h4>Cloud & Infra</h4>
-                            <div class="skill-tags">
-                                <span>Cloud Transition</span>
-                                <span>IT Architecture</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Networking</h4>
-                            <div class="skill-tags">
-                                <span>TCP/IP</span>
-                                <span>Topologies</span>
-                                <span>CCNA Level</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <div class="skill-tags">
-                                <span>Python</span>
-                                <span>C</span>
-                                <span>C++</span>
-                                <span>SQL</span>
-                                <span>English (C1)</span>
-                                <span>Spanish (A2)</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Concepts & Tools</h4>
-                            <div class="skill-tags">
-                                <span>OOP</span>
-                                <span>Data Structures</span>
-                                <span>System Design</span>
-                                <span>Git/GitHub</span>
-                                <span>Linux/Bash</span>
-                                <span>MS Automation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="skills-col fade-in">
                     <div class="glass-card certifications-card">
                         <h3><i class="fas fa-certificate"></i> <span data-i18n="certifications">Certifications</span></h3>
@@ -389,17 +339,31 @@
         <!-- Poems Section -->
         <section id="poems" class="section">
             <h2 class="section-title fade-in" data-i18n="poems_title">Poems I'm Glad I Can Read in Turkish</h2>
-            <div class="poems-grid fade-in" id="poems-grid">
-                <!-- Dynamically generated by script.js -->
+            <div class="poems-container fade-in">
+                <button class="scroll-btn poems-scroll-btn scroll-left" id="poems-scroll-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                <div class="poems-grid" id="poems-grid">
+                    <!-- Injected via script.js -->
+                </div>
+                <button class="scroll-btn poems-scroll-btn scroll-right" id="poems-scroll-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="section">
-            <h2 class="section-title fade-in" data-i18n="blog_title">Blog</h2>
-            <div class="blog-content glass-card fade-in">
-                <i class="fas fa-pencil-alt blog-icon"></i>
-                <p data-i18n="blog_coming_soon">Coming Soon! I'll be sharing my thoughts on technology, travel, and more.</p>
+        <!-- Albums Section -->
+        <section id="albums" class="section">
+            <h2 class="section-title fade-in" data-i18n="albums_title">Favorite Albums</h2>
+            <div class="albums-container fade-in">
+                <button class="scroll-btn albums-scroll-btn scroll-left" id="albums-scroll-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                <div class="albums-grid" id="albums-grid">
+                    <div class="album-card"><img src="website images/albums/linkin_park_hybrid_theory.jpg" alt="Linkin Park Hybrid Theory"></div>
+                    <div class="album-card"><img src="website images/albums/linkin_park_meteora.jpg" alt="Linkin Park Meteora"></div>
+                    <div class="album-card"><img src="website images/albums/teoman_teo.jpg" alt="Teoman Teo"></div>
+                    <div class="album-card"><img src="website images/albums/three_days_grace_one_x.jpg" alt="Three Days Grace One-x"></div>
+                    <div class="album-card"><img src="website images/albums/paramore_brand_new_eyes.jpg" alt="Paramore Brand New Eyes"></div>
+                    <div class="album-card"><img src="website images/albums/mor_ve_ötesi_dunya_yalan_soyluyor.jpg" alt="Mor ve Ötesi Dünya Yalan Söylüyor"></div>
+                    <div class="album-card"><img src="website images/albums/manga_şehr_i_huzun.jpg" alt="Manga Şehr-i Hüzün"></div>
+                    <div class="album-card"><img src="website images/albums/model_diger_masallar.jpg" alt="Model Diğer Masallar"></div>
+                </div>
+                <button class="scroll-btn albums-scroll-btn scroll-right" id="albums-scroll-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 
@@ -407,7 +371,6 @@
         <section id="contact" class="section">
             <h2 class="section-title fade-in" data-i18n="contact_title">Get In Touch</h2>
             <div class="contact-content glass-card fade-in">
-                <p data-i18n="contact_p">I'm always open to discussing new opportunities, tech projects, or your favorite travel destinations.</p>
                 <div class="social-links">
                     <a href="mailto:alidavut.esk1@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://linkedin.com/in/ali-davut-eskiocak" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>

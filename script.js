@@ -149,4 +149,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Poems Scroll Logic
+    const poemsScrollLeft = document.getElementById('poems-scroll-left');
+    const poemsScrollRight = document.getElementById('poems-scroll-right');
+    
+    if (poemsGrid && poemsScrollLeft && poemsScrollRight) {
+        poemsScrollLeft.addEventListener('click', () => {
+            const card = poemsGrid.querySelector('.poem-card');
+            if (card) {
+                const cardWidth = card.offsetWidth;
+                const gap = parseFloat(getComputedStyle(poemsGrid).gap) || 32; // fallback to 32px (2rem)
+                poemsGrid.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
+            }
+        });
+
+        poemsScrollRight.addEventListener('click', () => {
+            const card = poemsGrid.querySelector('.poem-card');
+            if (card) {
+                const cardWidth = card.offsetWidth;
+                const gap = parseFloat(getComputedStyle(poemsGrid).gap) || 32;
+                poemsGrid.scrollBy({ left: (cardWidth + gap), behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Albums Scroll Logic
+    const albumsScrollLeft = document.getElementById('albums-scroll-left');
+    const albumsScrollRight = document.getElementById('albums-scroll-right');
+    const albumsGrid = document.getElementById('albums-grid');
+    
+    if (albumsGrid && albumsScrollLeft && albumsScrollRight) {
+        albumsScrollLeft.addEventListener('click', () => {
+            const card = albumsGrid.querySelector('.album-card');
+            if (card) {
+                const cardWidth = card.offsetWidth;
+                const gap = parseFloat(getComputedStyle(albumsGrid).gap) || 32;
+                albumsGrid.scrollBy({ left: -(cardWidth + gap), behavior: 'smooth' });
+            }
+        });
+
+        albumsScrollRight.addEventListener('click', () => {
+            const card = albumsGrid.querySelector('.album-card');
+            if (card) {
+                const cardWidth = card.offsetWidth;
+                const gap = parseFloat(getComputedStyle(albumsGrid).gap) || 32;
+                albumsGrid.scrollBy({ left: (cardWidth + gap), behavior: 'smooth' });
+            }
+        });
+    }
 });

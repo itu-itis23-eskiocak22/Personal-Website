@@ -138,13 +138,13 @@ h1, h2, h3, h4 {
 }
 
 .nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -269,9 +269,10 @@ main {
 }
 
 .name {
-    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
     font-weight: 700;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 
 .title {
@@ -460,7 +461,9 @@ main {
 /* Skills & Certifications */
 .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
     gap: 2rem;
 }
 
@@ -622,6 +625,46 @@ main {
 }
 
 /* Poems Section */
+.poems-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.poems-scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.poems-scroll-btn:hover {
+    background: var(--gradient);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+}
+
+.poems-scroll-btn.scroll-left {
+    left: -25px;
+}
+
+.poems-scroll-btn.scroll-right {
+    right: -25px;
+}
+
 .poems-grid {
     display: flex;
     gap: 2rem;
@@ -643,9 +686,10 @@ main {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    flex: 0 0 300px;
+    /* 3 cards per view with 2rem gap */
+    flex: 0 0 calc(33.333% - 1.333rem);
     height: 100%;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 .poem-card h3 {
@@ -722,29 +766,84 @@ main {
     color: var(--text-primary);
 }
 
-/* Blog Section */
-.blog-content {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
+/* Albums Section */
+.albums-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.albums-scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-}
-
-.blog-icon {
-    font-size: 3rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.blog-content p {
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
     font-size: 1.2rem;
-    color: var(--text-secondary);
+}
+
+.albums-scroll-btn:hover {
+    background: var(--gradient);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+}
+
+.albums-scroll-btn.scroll-left {
+    left: -25px;
+}
+
+.albums-scroll-btn.scroll-right {
+    right: -25px;
+}
+
+.albums-grid {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.albums-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.album-card {
+    flex: 0 0 calc(25% - 1.5rem);
+    scroll-snap-align: start;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.2);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 /* Contact */
@@ -817,6 +916,10 @@ footer {
         padding-top: 120px;
     }
 
+    .name {
+        white-space: normal;
+    }
+
     .hero-cta {
         justify-content: center;
     }
@@ -828,6 +931,15 @@ footer {
 
     .skills-container {
         grid-template-columns: 1fr;
+    }
+
+    .poem-card {
+        /* 2 cards per view with 2rem gap */
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .album-card {
+        flex: 0 0 calc(33.333% - 1.333rem);
     }
 
     .contact-info-inline {
@@ -844,6 +956,15 @@ footer {
 
     .section {
         padding: 60px 0;
+    }
+
+    .poem-card {
+        /* 1 card per view */
+        flex: 0 0 100%;
+    }
+
+    .album-card {
+        flex: 0 0 calc(50% - 1rem);
     }
 
     .timeline::before {
