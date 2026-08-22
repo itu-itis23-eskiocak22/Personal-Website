@@ -557,10 +557,22 @@ main {
 /* Skills & Certifications */
 .skills-container {
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 950px;
     margin: 0 auto;
     gap: 2rem;
+}
+
+.skills-container h3 {
+    color: var(--accent-1);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skills-container h3 i {
+    color: var(--accent-2);
 }
 
 .skill-category {
