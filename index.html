@@ -13,9 +13,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=7">
     <!-- Translations -->
-    <script src="translations.js"></script>
+    <script src="translations.js?v=2"></script>
     <!-- Poems Data -->
     <script src="poems.js"></script>
 </head>
@@ -83,7 +83,7 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3 data-i18n="exp_mercedes_title">IT Infrastructure Solution Design Intern</h3>
-                            <span class="company"><i class="fas fa-building"></i> Mercedes-Benz Türk A.Ş.</span>
+                            <span class="company"><i class="fas fa-building"></i> <a href="https://www.mercedesbenzturk.com.tr/" target="_blank" class="company-link">Mercedes-Benz Türk A.Ş.</a></span>
                             <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_mercedes_date">07/2025 – Present (Hybrid)</span></span>
                         </div>
                         <ul class="timeline-details">
@@ -99,13 +99,16 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3 data-i18n="exp_siemens_title">Part-Time Working Student (IT Service Desk)</h3>
-                            <span class="company"><i class="fas fa-building"></i> Siemens (Istanbul)</span>
+                            <span class="company"><i class="fas fa-building"></i> <a href="https://www.siemens.com" target="_blank" class="company-link">Siemens</a> (Istanbul)</span>
                             <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_siemens_date">09/2024 – 07/2025</span></span>
                         </div>
                         <ul class="timeline-details">
-                            <li data-i18n="exp_siemens_l1">Acted as first line of technical consultation for R&D teams under Siemens Advanta.</li>
+                            <li data-i18n="exp_siemens_l1">Acted as first line of technical consultation for R&D teams under Siemens Foundational Technologies.</li>
                             <li data-i18n="exp_siemens_l2">Managed network support infrastructure and IT Asset Management.</li>
                         </ul>
+                        <button class="details-btn" id="siemensDetailsBtn">
+                            <span data-i18n="click_details">View Details</span> <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -114,7 +117,7 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3 data-i18n="exp_isuzu_title">Project Intern</h3>
-                            <span class="company"><i class="fas fa-building"></i> Anadolu Isuzu (Istanbul)</span>
+                            <span class="company"><i class="fas fa-building"></i> <a href="https://www.isuzu.com.tr" target="_blank" class="company-link">Anadolu Isuzu</a> (Istanbul)</span>
                             <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_isuzu_date">07/2024 – 09/2024</span></span>
                         </div>
                         <ul class="timeline-details">
@@ -378,6 +381,7 @@
                     <div class="album-card"><img src="website images/albums/manga_şehr_i_huzun.jpg" alt="Manga Şehr-i Hüzün"></div>
                     <div class="album-card"><img src="website images/albums/model_diger_masallar.jpg" alt="Model Diğer Masallar"></div>
                     <div class="album-card"><img src="website images/albums/duman_belki_alisman_lazim.jpg" alt="Duman Belki Alışman Lazım"></div>
+                    <div class="album-card"><img src="website images/albums/manifest_manifestival.jpg" alt="Manifest - Manifestival"></div>
                 </div>
             </div>
         </section>
@@ -409,6 +413,39 @@
         <p>&copy; 2026 Ali Davut Eskiocak. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Siemens Detail Modal -->
+    <div id="siemensModal" class="siemens-overlay">
+        <div class="siemens-modal">
+            <span class="siemens-close">&times;</span>
+            <div class="siemens-layout">
+                <div class="siemens-photo-col">
+                    <img src="website images/business/siemens1.jpg" alt="Siemens Detail" class="siemens-photo">
+                    <p class="siemens-caption" data-i18n="siemens_team_caption">Siemens Ekibimle</p>
+                </div>
+                <div class="siemens-details">
+                    <h3 class="siemens-title" data-i18n="modal_siemens_title">Siemens IT Service Desk</h3>
+                    <ul class="siemens-tasks">
+                        <li>Dispatching ACL Request Tickets</li>
+                        <li>Providing soft connection between Service Desk and Network Teams</li>
+                        <li>Managing IT Asset Management System</li>
+                        <li>Keeping track of ITAM records</li>
+                        <li>Troubleshooting RDP problems</li>
+                        <li>Providing information about segments and applications for users</li>
+                        <li>Asset Owner Change</li>
+                        <li>Decomission Process</li>
+                        <li>Assigning IP costs to the projects</li>
+                        <li>Providing alignment between IP costs and Application Records</li>
+                        <li>Ensuring Accuracy of Application Records</li>
+                        <li>Management of Mendix</li>
+                        <li>Dispatching and Handling new client in an existing network tickets</li>
+                        <li>Support in a test room</li>
+                        <li>Ordering FQDN's for IP addresses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
 </body>
 </html>

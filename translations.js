@@ -23,6 +23,9 @@ const translations = {
         "poems_title": "Poems I'm Glad I Can Read in Turkish",
         "albums_title": "Favorite Albums",
         "contact_title": "Get In Touch",
+        "click_details": "View Details",
+        "siemens_team_caption": "With My Siemens Team",
+        "modal_siemens_title": "Siemens IT Service Desk",
         
         "exp_mercedes_title": "IT Infrastructure Solution Design Intern",
         "exp_mercedes_date": "07/2025 – Present (Hybrid)",
@@ -32,7 +35,7 @@ const translations = {
         
         "exp_siemens_title": "Part-Time Working Student (IT Service Desk)",
         "exp_siemens_date": "09/2024 – 07/2025",
-        "exp_siemens_l1": "Acted as first line of technical consultation for R&D teams under Siemens Advanta.",
+        "exp_siemens_l1": "Acted as first line of technical consultation for R&D teams under Siemens Foundational Technologies.",
         "exp_siemens_l2": "Managed network support infrastructure and IT Asset Management.",
 
         "exp_isuzu_title": "Project Intern",
@@ -94,6 +97,9 @@ const translations = {
         "poems_title": "İyi ki Türkçe biliyorum dediğim şiirler",
         "albums_title": "Sevdiğim Albümler",
         "contact_title": "İletişime Geç",
+        "click_details": "Detayları Gör",
+        "siemens_team_caption": "Siemens Ekibimle",
+        "modal_siemens_title": "Siemens BT Hizmet Masası",
         
         "exp_mercedes_title": "BT Altyapı Çözüm Tasarımı Stajyeri",
         "exp_mercedes_date": "07/2025 – Günümüz (Hibrit)",
@@ -103,7 +109,7 @@ const translations = {
         
         "exp_siemens_title": "Yarı Zamanlı Çalışan Öğrenci (BT Hizmet Masası)",
         "exp_siemens_date": "09/2024 – 07/2025",
-        "exp_siemens_l1": "Siemens Advanta Ar-Ge ekipleri için teknik danışmanlığın ilk adımı olma.",
+        "exp_siemens_l1": "Siemens Foundational Technologies Ar-Ge ekipleri için teknik danışmanlığın ilk adımı olma.",
         "exp_siemens_l2": "Ağ destek altyapısını ve BT Varlık Yönetimi sistemlerini yönetme.",
 
         "exp_isuzu_title": "Proje Stajyeri",

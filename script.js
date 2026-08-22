@@ -173,4 +173,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Siemens Modal Logic
+    const siemensBtn = document.getElementById('siemensDetailsBtn');
+    const siemensModal = document.getElementById('siemensModal');
+    if (siemensBtn && siemensModal) {
+        siemensBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            siemensModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        siemensModal.addEventListener('click', (e) => {
+            if (e.target === siemensModal) {
+                siemensModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+
+        const siemensClose = siemensModal.querySelector('.siemens-close');
+        if (siemensClose) {
+            siemensClose.addEventListener('click', () => {
+                siemensModal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+    }
 });

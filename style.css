@@ -73,7 +73,20 @@ h1, h2, h3, h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradientShift 6s ease infinite;
+    animation: textReveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards, gradientShift 6s ease infinite;
+}
+
+@keyframes textReveal {
+    0% {
+        opacity: 0;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translateX(0);
+    }
 }
 
 @keyframes gradientShift {
@@ -193,6 +206,30 @@ h1, h2, h3, h4 {
 
 .logo span {
     color: var(--accent-1);
+}
+
+.details-btn {
+    position: relative;
+    z-index: 10;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: var(--accent-1);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    background: rgba(56, 189, 248, 0.2);
+    border-color: rgba(56, 189, 248, 0.6);
+    transform: translateY(-2px);
 }
 
 .logo-icon {
@@ -533,23 +570,23 @@ main {
     transform: translateY(-2px);
 }
 
-.cert-item, .project-item, .activity-item {
-    margin-bottom: 1.25rem;
-    padding-bottom: 1.25rem;
+.cert-item, .project-item, .activity-item, .lang-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--glass-border);
 }
 
-.cert-item:last-child, .project-item:last-child, .activity-item:last-child {
+.cert-item:last-child, .project-item:last-child, .activity-item:last-child, .lang-item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
 }
 
-.cert-item h4, .project-item h4, .activity-item h4 {
-    margin-bottom: 0.25rem;
+.cert-item h4, .project-item h4, .activity-item h4, .lang-item h4 {
+    margin-bottom: 0.5rem;
 }
 
-.cert-item p, .activity-item p {
+.cert-item p, .activity-item p, .lang-item p {
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
@@ -663,6 +700,8 @@ main {
     max-width: 100%;
 }
 
+
+
 .poems-scroll-btn {
     position: absolute;
     top: 50%;
@@ -744,6 +783,7 @@ main {
     white-space: pre-line;
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -916,6 +956,7 @@ footer {
     .poem-card {
         /* 2 cards per view with 2rem gap */
         flex: 0 0 calc(50% - 1rem);
+    }
     .contact-info-inline {
         flex-direction: column;
         gap: 1rem;
@@ -935,6 +976,7 @@ footer {
     .poem-card {
         /* 1 card per view */
         flex: 0 0 100%;
+    }
     .timeline::before {
         left: 0;
     }
@@ -945,5 +987,172 @@ footer {
 
     .timeline-item {
         padding-left: 30px;
+    }
+}
+
+/* Custom Additions */
+.company-link {
+    color: var(--accent-1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.company-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.clickable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+    border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* Siemens Detail Modal */
+.siemens-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+}
+
+.siemens-modal {
+    position: relative;
+    width: 90vw;
+    max-width: 1000px;
+    max-height: 85vh;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.siemens-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.siemens-photo-col {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 280px;
+}
+
+.siemens-photo {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.siemens-caption {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+}
+
+.siemens-title {
+    font-size: 1.5rem;
+    color: var(--accent-1);
+    margin: 0 0 1.5rem 0;
+}
+
+.siemens-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.siemens-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem 1.5rem;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.siemens-tasks li {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.siemens-tasks li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-1);
+    font-weight: bold;
+}
+
+.siemens-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 1;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.4);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.siemens-close:hover {
+    color: white;
+    background: var(--accent-1);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .siemens-layout {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .siemens-photo-col {
+        width: 100%;
+    }
+    .siemens-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+    .siemens-tasks {
+        grid-template-columns: 1fr;
+    }
+    .siemens-modal {
+        padding: 1.5rem;
+        max-height: 90vh;
+        overflow-y: auto;
     }
 }
