@@ -429,6 +429,32 @@ main {
     background: var(--glass-border);
 }
 
+.timeline-content {
+    position: relative;
+}
+
+.company-logo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    height: 40px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .company-logo {
+        height: 30px;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
 .timeline-item {
     position: relative;
     padding-left: 60px;
