@@ -200,4 +200,31 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Isuzu Modal Logic
+    const isuzuBtn = document.getElementById('isuzuDetailsBtn');
+    const isuzuModal = document.getElementById('isuzuModal');
+    if (isuzuBtn && isuzuModal) {
+        isuzuBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            isuzuModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        isuzuModal.addEventListener('click', (e) => {
+            if (e.target === isuzuModal) {
+                isuzuModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+
+        const isuzuClose = isuzuModal.querySelector('.isuzu-close');
+        if (isuzuClose) {
+            isuzuClose.addEventListener('click', () => {
+                isuzuModal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+    }
 });

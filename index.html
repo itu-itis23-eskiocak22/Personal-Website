@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=9">
     <!-- Translations -->
     <script src="translations.js?v=2"></script>
     <!-- Poems Data -->
@@ -88,8 +88,12 @@
                         </div>
                         <ul class="timeline-details">
                             <li data-i18n="exp_mercedes_l1">Support enterprise cloud transition strategies and IT infrastructure optimization.</li>
-                            <li data-i18n="exp_mercedes_l2">Oversee log management, inventory tracking, and firewall configurations.</li>
+                            <li data-i18n="exp_mercedes_l2">Oversee inventory tracking.</li>
                             <li data-i18n="exp_mercedes_l3">Designed internal automation tools utilizing Microsoft Power Automate.</li>
+                            <li data-i18n="exp_mercedes_l4">Document internal procedures and instructions.</li>
+                            <li data-i18n="exp_mercedes_l5">Develop dashboards to visualize processes using PowerBI.</li>
+                            <li data-i18n="exp_mercedes_l6">Perform Log Management using ArcSight Logger, create automatic reports and alerts, and refine logs by writing queries when needed.</li>
+                            <li data-i18n="exp_mercedes_l7">Develop an internal tool that scans all ports of switches and creates reports about their status and security.</li>
                         </ul>
                     </div>
                 </div>
@@ -117,13 +121,15 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3 data-i18n="exp_isuzu_title">Project Intern</h3>
-                            <span class="company"><i class="fas fa-building"></i> <a href="https://www.isuzu.com.tr" target="_blank" class="company-link">Anadolu Isuzu</a> (Istanbul)</span>
+                            <span class="company"><i class="fas fa-building"></i> <a href="https://www.isuzu.com.tr" target="_blank" class="company-link">Anadolu Isuzu</a> (Kocaeli)</span>
                             <span class="date"><i class="far fa-calendar-alt"></i> <span data-i18n="exp_isuzu_date">07/2024 – 09/2024</span></span>
                         </div>
                         <ul class="timeline-details">
-                            <li data-i18n="exp_isuzu_l1">Conducted requirement analysis to optimize the fuse box control workflow.</li>
-                            <li data-i18n="exp_isuzu_l2">Designed and demonstrated a software-based solution to address inefficiencies.</li>
+                            <li data-i18n="exp_isuzu_desc">I gained experience in the R&D and IT departments during my internship and developed a project to improve the efficiency of the fuse box control process, which I presented to the managers and directors of the company.</li>
                         </ul>
+                        <button class="details-btn" id="isuzuDetailsBtn">
+                            <span data-i18n="click_details">View Details</span> <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -371,6 +377,7 @@
                     <div class="album-card"><img src="website images/albums/manga_şehr_i_huzun.jpg" alt="Manga Şehr-i Hüzün"></div>
                     <div class="album-card"><img src="website images/albums/model_diger_masallar.jpg" alt="Model Diğer Masallar"></div>
                     <div class="album-card"><img src="website images/albums/duman_belki_alisman_lazim.jpg" alt="Duman Belki Alışman Lazım"></div>
+                    <div class="album-card"><img src="website images/albums/manifest_manifestival.jpg" alt="Manifest - Manifestival"></div>
                     <!-- Duplicated Set for Infinite Scroll -->
                     <div class="album-card"><img src="website images/albums/linkin_park_hybrid_theory.jpg" alt="Linkin Park Hybrid Theory"></div>
                     <div class="album-card"><img src="website images/albums/linkin_park_meteora.jpg" alt="Linkin Park Meteora"></div>
@@ -446,6 +453,21 @@
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <!-- Isuzu Detail Modal -->
+    <div id="isuzuModal" class="siemens-overlay">
+        <div class="siemens-modal" style="max-width: 1200px;">
+            <span class="siemens-close isuzu-close">&times;</span>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h3 class="siemens-title" data-i18n="modal_isuzu_title">Anadolu Isuzu Project Intern</h3>
+            </div>
+            <div class="isuzu-gallery" style="display: flex; gap: 1.5rem; overflow-x: auto; padding-bottom: 1rem; align-items: center; justify-content: flex-start;">
+                <img src="website images/business/isuzu1.jpg" alt="Isuzu Detail 1" style="height: 400px; border-radius: 12px; object-fit: contain; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);">
+                <img src="website images/business/isuzu2.jpg" alt="Isuzu Detail 2" style="height: 400px; border-radius: 12px; object-fit: contain; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);">
+                <img src="website images/business/isuzu3.jpg" alt="Isuzu Detail 3" style="height: 400px; border-radius: 12px; object-fit: contain; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=5"></script>
 </body>
 </html>

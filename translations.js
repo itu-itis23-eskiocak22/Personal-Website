@@ -28,20 +28,25 @@ const translations = {
         "modal_siemens_title": "Siemens IT Service Desk",
         
         "exp_mercedes_title": "IT Infrastructure Solution Design Intern",
-        "exp_mercedes_date": "07/2025 – Present (Hybrid)",
+        "exp_mercedes_date": "07/2025 – 01/2026 & 07/2026 – Present (Hybrid)",
         "exp_mercedes_l1": "Support enterprise cloud transition strategies and IT infrastructure optimization.",
-        "exp_mercedes_l2": "Oversee log management, inventory tracking, and firewall configurations.",
+        "exp_mercedes_l2": "Oversee inventory tracking.",
         "exp_mercedes_l3": "Designed internal automation tools utilizing Microsoft Power Automate.",
+        "exp_mercedes_l4": "Document internal procedures and instructions.",
+        "exp_mercedes_l5": "Develop dashboards to visualize processes using PowerBI.",
+        "exp_mercedes_l6": "Perform Log Management using ArcSight Logger, create automatic reports and alerts, and refine logs by writing queries when needed.",
+        "exp_mercedes_l7": "Develop an internal tool that scans all ports of switches and creates reports about their status and security.",
         
         "exp_siemens_title": "Part-Time Working Student (IT Service Desk)",
         "exp_siemens_date": "09/2024 – 07/2025",
-        "exp_siemens_l1": "Acted as first line of technical consultation for R&D teams under Siemens Foundational Technologies.",
+        "exp_siemens_l1": "I joined the IT Service Desk team within Siemens Foundational Technologies, the strategic business unit responsible for Siemens' global R&D operations and digital transformation.",
         "exp_siemens_l2": "Managed network support infrastructure and IT Asset Management.",
 
         "exp_isuzu_title": "Project Intern",
         "exp_isuzu_date": "07/2024 – 09/2024",
-        "exp_isuzu_l1": "Conducted requirement analysis to optimize the fuse box control workflow.",
-        "exp_isuzu_l2": "Designed and demonstrated a software-based solution to address inefficiencies.",
+        "exp_isuzu_desc": "I gained experience in the R&D and IT departments during my internship and developed a project to improve the efficiency of the fuse box control process, which I presented to the managers and directors of the company.",
+        "modal_isuzu_title": "Anadolu Isuzu Project Intern",
+
         
         "edu_itu_degree": "B.Sc. Computer Engineering (3rd Year)",
         "edu_itu_meta": "Istanbul, Turkey | GPA: 3.34 / 4.00 | Exp. Grad: 2027",
@@ -102,20 +107,25 @@ const translations = {
         "modal_siemens_title": "Siemens BT Hizmet Masası",
         
         "exp_mercedes_title": "BT Altyapı Çözüm Tasarımı Stajyeri",
-        "exp_mercedes_date": "07/2025 – Günümüz (Hibrit)",
+        "exp_mercedes_date": "07/2025 – 01/2026 & 07/2026 – Günümüz (Hibrit)",
         "exp_mercedes_l1": "Kurumsal bulut geçiş stratejilerine ve BT altyapı optimizasyonuna destek sağlama.",
-        "exp_mercedes_l2": "Log yönetimi, envanter takibi ve güvenlik duvarı yapılandırmalarını denetleme.",
+        "exp_mercedes_l2": "Envanter takibini yönetme.",
         "exp_mercedes_l3": "Microsoft Power Automate kullanarak dahili otomasyon araçları tasarlama.",
+        "exp_mercedes_l4": "Dahili prosedürleri ve talimatları belgelendirme.",
+        "exp_mercedes_l5": "PowerBI kullanarak süreçleri görselleştiren panolar (dashboard) geliştirme.",
+        "exp_mercedes_l6": "ArcSight Logger ile log yönetimi yapma, otomatik rapor ve alarmlar oluşturma, gerektiğinde sorgular yazarak logları filtreleme.",
+        "exp_mercedes_l7": "Switch portlarını tarayan ve durumları ile güvenlikleri hakkında rapor oluşturan dahili bir araç geliştirme.",
         
         "exp_siemens_title": "Yarı Zamanlı Çalışan Öğrenci (BT Hizmet Masası)",
         "exp_siemens_date": "09/2024 – 07/2025",
-        "exp_siemens_l1": "Siemens Foundational Technologies Ar-Ge ekipleri için teknik danışmanlığın ilk adımı olma.",
+        "exp_siemens_l1": "Siemens'in küresel Ar-Ge operasyonlarından ve dijital dönüşümünden sorumlu stratejik iş birimi olan Siemens Foundational Technologies bünyesindeki BT Hizmet Masası ekibine katıldım.",
         "exp_siemens_l2": "Ağ destek altyapısını ve BT Varlık Yönetimi sistemlerini yönetme.",
 
         "exp_isuzu_title": "Proje Stajyeri",
         "exp_isuzu_date": "07/2024 – 09/2024",
-        "exp_isuzu_l1": "Ar-Ge bölümünde sigorta kutusu kontrol iş akışını optimize etmek için gereksinim analizi yapma.",
-        "exp_isuzu_l2": "Süreç verimsizliklerini gidermek için yazılım tabanlı bir çözüm tasarlama ve sunma.",
+        "exp_isuzu_desc": "Stajım boyunca Ar-Ge ve BT departmanlarında deneyim kazandım ve sigorta kutusu kontrol sürecinin verimliliğini artırmak için bir proje geliştirerek bunu şirketin yönetici ve direktörlerine sundum.",
+        "modal_isuzu_title": "Anadolu Isuzu Proje Stajyeri",
+
         
         "edu_itu_degree": "Lisans, Bilgisayar Mühendisliği (3. Sınıf)",
         "edu_itu_meta": "İstanbul, Türkiye | Ort: 3.34 / 4.00 | Beklenen Mez: 2027",
